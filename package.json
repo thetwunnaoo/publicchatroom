@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "dev": "vite",
-    "bulid": "vite build"
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",

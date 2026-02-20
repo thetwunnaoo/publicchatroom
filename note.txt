@@ -29,7 +29,7 @@ npm install express     or       npm install express@latest
     }
 
 4. Run Build the app for production 
-    npm run bulid 
+    npm run build 
 
 5. Run Vite in developement server 
     npm run dev 
@@ -155,3 +155,22 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
  
 
 ---------------------------------------------------------------------------------
+
+=> Deploy on Cloud Server 
+
+1. your project need  Repo Public/Private to Github
+
+2. signin your account https.//render.com/
+
+3. Prepare the bulid output 
+   your project must bulided and typically located in the "dist" directory
+
+4. Create a new statuc site 
+   click > "New + static site > Github > your account > choose repo > click "Connect"
+
+5. Name : publicchatroom 
+   Branch : main 
+   Build Command : npm run build (React, Vue, Vite, Etc....), ng build (Angular)
+
+6. Environment Variables = copy paste .env data to Environment Variables
+
