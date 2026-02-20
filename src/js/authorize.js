@@ -23,13 +23,13 @@ export function Authorize(){
 
             // console.log(user);
 
-            updateProfile(auth.currentUser, {
+            updateProfile(user, {
                 displayName: fullname, 
                 photoURL: defaultProfileImg
             }).then(() => {
 
                 // set name to localstorage
-                setLocalName(fullname);
+                setLocalName(user);
 
                 // Redirect to index.html
                 window.location.href = "../index.html";
